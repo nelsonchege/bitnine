@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 const NavBar = () => {
   const [isDisplayed, setIsDisplayed] = useState<Boolean>(true);
@@ -26,17 +27,18 @@ const NavBar = () => {
       <div
         className={`min-w-screen-xl flex items-center justify-center ${
           !scrolling ? "hidden" : "block"
-        } bg-blue-600 text-white h-5 p-4`}
+        } bg-gradient-to-br from-pink-500 to-orange-400 text-white h-5 p-4`}
       >
         <span> This div is only visible when the user scrolls down</span>
       </div>
       <div></div>
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" className="flex items-center">
-          <img
+          <Image
             src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
             alt="Flowbite Logo"
+            width={30}
+            height={30}
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
             Flowbite
