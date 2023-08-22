@@ -1,3 +1,4 @@
+import EnterpriseSection from "./components/EnterpriseSection";
 import HeaderSection from "./components/HeaderSection";
 import Navbar from "./components/NavBar";
 
@@ -7,6 +8,7 @@ export default function Home() {
       {" "}
       <Navbar />
       <HeaderSection />
+      <EnterpriseSection />
     </div>
   );
 }
