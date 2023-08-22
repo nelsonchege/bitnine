@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const HeaderSection = () => {
   return (
-    <div className="h-screen flex flex-col items-center justify-center">
+    <div className="py-16 h-full flex flex-col items-center justify-center">
       <Image
         src="https://bitnine.net/wp-content/uploads/2022/04/AgenSQL-Logo.png"
         alt="Flowbite Logo"
