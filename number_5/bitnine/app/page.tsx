@@ -1,4 +1,5 @@
 import DBEngineSection from "./components/DBEngineSection";
+import EnterprisePackageSection from "./components/EnterprisePackageSection";
 import EnterpriseSection from "./components/EnterpriseSection";
 import HeaderSection from "./components/HeaderSection";
 import KeyFeaturesSection from "./components/KeyFeaturesSection";
@@ -13,6 +14,7 @@ export default function Home() {
       <EnterpriseSection />
       <KeyFeaturesSection />
       <DBEngineSection />
+      <EnterprisePackageSection />
     </div>
   );
 }
